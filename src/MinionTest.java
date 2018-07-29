@@ -3,13 +3,13 @@
  *    Level 1
  */
 
-
 import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 /**
- * To make these tests pass, you will need to create a Minion class with the member variables below.
+ * To make these tests pass, you will need to create a MinionsRDumb class with the
+ * member variables below.
  * 
  * <code>
  * 			private String name; 
@@ -18,20 +18,21 @@ import org.junit.Test;
  * 			private String master;
  * </code>
  * 
- * Create a constructor, and getters and setters for the member variables. If they’re done right, these tests will pass.
+ * Create a constructor, and getters and setters for the member variables. If
+ * they’re done right, these tests will pass.
  * 
- * **/
+ **/
 
 public class MinionTest {
 
 	@Test
 	public void testConstructor() {
-		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+		MinionsRDumb stuart = new MinionsRDumb("Stuart", 1, "yellow", "");
 		assertEquals("Stuart", stuart.getName());
 		assertEquals(1, stuart.getEyes());
 		assertEquals("yellow", stuart.getColor());
 
-		Minion dave = new Minion("Dave", 2, "yellow", "");
+		MinionsRDumb dave = new MinionsRDumb("Dave", 2, "yellow", "");
 		assertEquals("Dave", dave.getName());
 		assertEquals(2, dave.getEyes());
 		assertEquals("yellow", dave.getColor());
@@ -39,7 +40,7 @@ public class MinionTest {
 
 	@Test
 	public void testSetters() {
-		Minion stuart = new Minion("Stuart", 1, "yellow", "");
+		MinionsRDumb stuart = new MinionsRDumb("Stuart", 1, "yellow", "");
 
 		stuart.setMaster("T. Rex");
 		assertEquals("T. Rex", stuart.getMaster());
@@ -49,6 +50,3 @@ public class MinionTest {
 	}
 
 }
-
-
-
