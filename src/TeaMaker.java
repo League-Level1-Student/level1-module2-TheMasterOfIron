@@ -6,7 +6,13 @@
 public class TeaMaker {
 
 	/* Figure out how to make a cup of tea using the classes below */
-
+	public static void main(String[] args) {
+		Kettle kettle = new Kettle();
+		TeaBag tea = new TeaBag("vanilla");
+		Cup cup = new Cup();
+		kettle.boil();
+		cup.makeTea(tea, kettle.getWater());
+	}
 }
 
 class TeaBag {
@@ -64,5 +70,3 @@ class Cup {
 	}
 
 }
-
-
